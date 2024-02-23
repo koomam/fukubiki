@@ -1,0 +1,110 @@
+body {
+  text-align: center;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 500px;
+  height: 100vh;
+}
+
+p {
+  line-height: 0.5em
+}
+
+/* しましま */
+.tate-stripe {
+  background-image: linear-gradient(90deg,
+      #fff 25%, #dd1f1f 25%, #dd1f1f 50%, #fff 50%, #fff 75%, #dd1f1f 75%, #dd1f1f);
+  background-size: 120px 120px;
+  height: 8vh;
+  width: 93%;
+  margin: auto;
+}
+
+/* ガラポン */
+.garapon {
+  margin: auto;
+  position: relative;
+}
+
+.hexagon {
+  width: 200px;
+  height: 170px;
+  clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: #b3743c;
+  margin: auto;
+}
+
+.roulette {
+  animation: rotate 1s linear 0s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(222, 182, 154);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* 結果 */
+.result {
+  transform: translate(0, -55%);
+  margin-bottom: -5%;
+}
+
+.result-tama {
+  transform: translate(220%, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin: 20px auto;
+}
+
+.result-text {
+  margin: auto;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* ボタン */
+.button-wrapper {
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 景品一覧 */
+.keihin {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  line-height: 0.1em
+}
+
+.keihin-tama {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: auto 10px;
+}

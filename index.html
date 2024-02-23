@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>福引き</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="tate-stripe"></div> <!-- しましま -->
+  <h1>にゃんにゃん商店会<br>福引でポン！</h1> <!-- タイトル -->
+  <p>ルール</p>
+  <p>スタートを押して、好きなタイミングでストップを押してね</p>
+  <!-- ガラポン -->
+  <div class="garapon">
+    <div class="hexagon">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <!-- 結果 -->
+  <div class="result" style="display: none;">
+    <div class="result-tama"></div>
+    <div class="result-text"></div>
+  </div>
+  <!-- ボタン -->
+  <div class="button-wrapper">
+    <button class="start">スタート</button>
+    <button class="stop" style="display: none;">ストップ</button>
+    <button class="restart" style="display: none;">もう一度</button>
+  </div>
+  <!-- 景品一覧 -->
+  <div class="keihin">
+    <p class="keihin-tama" style="background-color: red;"></p>
+    <p>1等　温泉旅行</p>
+  </div>
+  <div class="keihin">
+    <p class="keihin-tama" style="background-color: yellow;"></p>
+    <p>2等　トースター</p>
+  </div>
+  <div class="keihin">
+    <p class="keihin-tama" style="background-color: green;"></p>
+    <p>3等　かき氷器</p>
+  </div>
+  <div class="keihin">
+    <p class="keihin-tama" style="background-color: blue;"></p>
+    <p>4等　チョコ・飴つかみ取り</p>
+  </div>
+  <div class="keihin">
+    <p class="keihin-tama" style="background-color: white;"></p>
+    <p>5等　ティッシュ</p>
+  </div>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/add.js"></script>
+</body>
+
+</html>
